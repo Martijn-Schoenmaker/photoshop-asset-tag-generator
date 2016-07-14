@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="nl-NL">
 <head>
   <meta charset="utf-8">
 
@@ -8,7 +8,7 @@
   <meta name="description" content="Photoshop assets tag generator">
   <meta name="author" content="Arjan Groenen en Martijn Schoenmaker">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,10 +18,24 @@
 <body>
 
   <div class="main-container">
+    <div class="dark-overlay">
+      <div class="color-overlay">
+        <div class="center-container">
+          <div class="title">
+            <h1>Photoshop assets tag generator</h1>
+          </div>
+          <input id="asset-tag-name" type="input" name="asset-tag-name" placeholder="Layer name here" onkeypress="enterPress(event)" oninput="getInput()">
+          <div class="clearboth"></div>
+          <div id="generated-code"><i>Generated Code</i></div>
+          <button id="btn-generate" type="button" name="button" onclick="message()" data-clipboard-text="">Copy to Clipboard</button>
+        </div>
 
+      </div>
+    </div>
   </div>
 
   <footer>
+    <script src="js/clipboard-button.js"></script>
     <script src="js/main.js"></script>
   </footer>
 
