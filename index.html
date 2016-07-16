@@ -27,7 +27,9 @@
           <input id="asset-tag-name" type="input" name="asset-tag-name" placeholder="Layer name here" onkeypress="enterPress(event)" oninput="getInput()">
           <div class="clearboth"></div>
           <div id="generated-code"><i>Generated Code</i></div>
-          <button id="btn-generate" type="button" name="button" onclick="message()" data-clipboard-text="">Copy to Clipboard</button>
+          <button id="btn-generate" type="button" name="button" onclick="generate()" data-clipboard-text="">Copy to Clipboard</button>
+          <div id="copy-message"></div>
+          <div id="history"></div>
         </div>
 
       </div>
